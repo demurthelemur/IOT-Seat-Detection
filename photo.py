@@ -7,6 +7,7 @@ def takePhoto():
   result, image = vid.read()
   if result:
     cv2.imwrite("photo/Result.png", image)
-    exit()
   else:
     print("No image detected. Please! try again")
+
+takePhoto()
